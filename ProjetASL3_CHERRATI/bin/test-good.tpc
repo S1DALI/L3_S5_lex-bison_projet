@@ -1,0 +1,5 @@
+int a;
+
+char test(int a){
+    int a, b, c =2 , d;
+}
