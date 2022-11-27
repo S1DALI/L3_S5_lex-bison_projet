@@ -1,5 +1,6 @@
 %{
     #include <stdio.h>
+    #include <unistd.h>
     int yylex();
     int yyerror(const char* msg);
 %}
@@ -20,7 +21,6 @@ DeclarateursGlob:
     ;
 DeclVarsLoc:
         DeclVarsLoc TYPE DeclarateursLoc ';'
-    | DeclVarsLoc DeclarateursLoc ';'
     |
     ;
 DeclarateursLoc:
@@ -103,7 +103,18 @@ ListExp:
     |  Exp
     ;
 %%
-int main(void){
+int main(int argc, char *argv[]){
+    int opt;
+    while((opt = getopt(argc, argv, "th")) != -1){
+        switch(opt){
+            case 't':
+                printf("tree is not available for now !\n");
+                break;
+            case 'h':
+                printf("To give a file to the progrm you can use ./tpcas < FILE.tpc\nto print out a tree use the command ./tpcas -t < FILE.tpc \n");
+                break;
+        }
+    }
     yyparse();
     return 0;
 }

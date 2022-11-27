@@ -1,6 +1,5 @@
 int a;
 
 char test(int a){
-    char a = 2, b = 2, c, d = 6;
-    a = 2, b;
+    a = 2;
 }

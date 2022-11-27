@@ -1,6 +1,6 @@
-#line 2 "projet.yy.c"
+#line 2 "src/tpcas.yy.c"
 
-#line 4 "projet.yy.c"
+#line 4 "src/tpcas.yy.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -487,13 +487,13 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "projet.lex"
-#line 2 "projet.lex"
-    #include "projet.h"
+#line 1 "src/tpcas.lex"
+#line 2 "src/tpcas.lex"
+    #include "tpcas.h"
     #include <stdio.h>
-#line 495 "projet.yy.c"
+#line 495 "src/tpcas.yy.c"
 #define YY_NO_INPUT 1
-#line 497 "projet.yy.c"
+#line 497 "src/tpcas.yy.c"
 
 #define INITIAL 0
 
@@ -708,9 +708,9 @@ YY_DECL
 		}
 
 	{
-#line 9 "projet.lex"
+#line 9 "src/tpcas.lex"
 
-#line 714 "projet.yy.c"
+#line 714 "src/tpcas.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -769,103 +769,103 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 "projet.lex"
+#line 10 "src/tpcas.lex"
 {return VOID;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 11 "projet.lex"
+#line 11 "src/tpcas.lex"
 {return TYPE;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 "projet.lex"
+#line 12 "src/tpcas.lex"
 {return ADDSUB;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 "projet.lex"
+#line 13 "src/tpcas.lex"
 {return DIVSTAR;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 14 "projet.lex"
+#line 14 "src/tpcas.lex"
 {return EQ;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 15 "projet.lex"
+#line 15 "src/tpcas.lex"
 {return ORDER;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 16 "projet.lex"
+#line 16 "src/tpcas.lex"
 {return IF;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 17 "projet.lex"
+#line 17 "src/tpcas.lex"
 {return ELSE;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 18 "projet.lex"
+#line 18 "src/tpcas.lex"
 {return AND;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 19 "projet.lex"
+#line 19 "src/tpcas.lex"
 {return OR;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 20 "projet.lex"
+#line 20 "src/tpcas.lex"
 {return RETURN;}
 	YY_BREAK
 case 12:
 /* rule 12 can match eol */
 YY_RULE_SETUP
-#line 21 "projet.lex"
+#line 21 "src/tpcas.lex"
 {return CHARACTER;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 22 "projet.lex"
+#line 22 "src/tpcas.lex"
 {return NUM;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 23 "projet.lex"
+#line 23 "src/tpcas.lex"
 {return IDENT;}
 	YY_BREAK
 case 15:
 /* rule 15 can match eol */
 YY_RULE_SETUP
-#line 24 "projet.lex"
+#line 24 "src/tpcas.lex"
 ;
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 25 "projet.lex"
+#line 25 "src/tpcas.lex"
 ;
 	YY_BREAK
 case 17:
 /* rule 17 can match eol */
 YY_RULE_SETUP
-#line 26 "projet.lex"
+#line 26 "src/tpcas.lex"
 ;
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 27 "projet.lex"
+#line 27 "src/tpcas.lex"
 {return *yytext;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 28 "projet.lex"
+#line 28 "src/tpcas.lex"
 ECHO;
 	YY_BREAK
-#line 869 "projet.yy.c"
+#line 869 "src/tpcas.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1833,5 +1833,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 28 "projet.lex"
+#line 28 "src/tpcas.lex"
 

@@ -1,5 +1,5 @@
 %{
-    #include "projet.h"
+    #include "tpcas.h"
     #include <stdio.h>
 %}
 
